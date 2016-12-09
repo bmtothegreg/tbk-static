@@ -65,3 +65,25 @@ body {
 .answer-right {
   background-image: url(sources/bgright.png);
 }
+
+/* portraits */
+
+.logo-small img {
+  width:70px;
+  text-align: left;
+  margin-top: 20px;
+  margin-left:20px;
+}
+
+.portrait {
+  display:inline-block;
+  min-height: 50px;
+  width:6.2%;
+  box-sizing: border-box;
+  border: 3px solid green;
+  margin-bottom:5px;
+}
+
+.portrait img {
+  width:100%;
+}
