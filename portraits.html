@@ -14,6 +14,8 @@
 
       <div class="portraits">
         <div class="portrait">
+          <div class="name">Marie-Charlotte</div>
+          <!-- <div class="repeche"></div> -->
           <img src="sources/bleulliette.jpeg" />
         </div>
       </div>
@@ -29,9 +31,17 @@
   <script>
     $(document).ready(function(){
       var html = $('.portraits').html();
+
       for(var i = 0; i < 140; i++) {
         $('.portraits').append(html);
       }
+
+      $('.portrait').each(function(){
+        var rand = Math.random();
+        if(rand < 0.3){
+          $(this).addClass('exterminate');
+        }
+      });
     });
   </script>
 </html>

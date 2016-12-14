@@ -62,6 +62,14 @@ body {
   left: 60px;
 }
 
+.answer-right.answer-true {
+  background-image: url(sources/bgtrue-right.png);
+}
+
+.answer-left.answer-true {
+  background-image: url(sources/bgtrue-left.png);
+}
+
 .answer-right {
   background-image: url(sources/bgright.png);
 }
@@ -78,12 +86,39 @@ body {
 .portrait {
   display:inline-block;
   min-height: 50px;
-  width:6.2%;
+  width:6%;
   box-sizing: border-box;
-  border: 3px solid green;
   margin-bottom:5px;
+  background-color:black;
+  position:relative;
+}
+
+.portrait.exterminate .repeche {
+  background-color: blue;
+  opacity: 0.5;
+  position: absolute;
+  top:0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 5;
+}
+
+.portrait.exterminate img {
+  opacity: 0.2;
 }
 
 .portrait img {
   width:100%;
+}
+
+.portrait .name {
+  position: absolute;
+  font-size: 8px;
+  text-align: center;
+  width:100%;
+  background-color: rgba(0,0,0,0.7);
+  padding:5px 0;
+  bottom:0;
+  box-sizing: border-box;
 }
